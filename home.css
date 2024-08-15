@@ -4,8 +4,8 @@
 }
 
 #grid {
-  height: 600px;
-  margin: 30px 30px 15px 30px;
+  height: 575px;
+  margin: 30px 30px 25px 30px;
 }
 
 #carousel {
@@ -13,6 +13,13 @@
 }
 
 .btn {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center
+}
+
+.input {
+  align-items: baseline;
+  width: fit-content;
 }
