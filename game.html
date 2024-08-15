@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free-Roam Game</title>
+    <title>Free Roam Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-area">
-        <div id="player"></div>
+    <div id="game-container">
+        <h1 class="game-title">Free Roam Game</h1>
+        <div id="game-area">
+            <div id="player"></div>
+            <!-- Characters will be added here by JavaScript -->
+            <div id="dialogue-box">
+                <p class="dialogue-text"></p>
+            </div>
+            <button id="talk-button">Talk</button>
+        </div>
     </div>
-
     <script src="game.js"></script>
 </body>
 </html>
