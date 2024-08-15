@@ -3,32 +3,16 @@
   font-family: "Pixelify Sans", roboto;
 }
 
-nav {
-  background-color: rgb(202, 56, 56);
+#grid {
+  height: 600px;
+  margin: 30px 30px 15px 30px;
 }
 
-.bodi {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  margin-left: 40px;
+#carousel {
+  text-align: center;
 }
 
-.row {
-  justify-content: center;
-  align-content: center;
-}
-
-.card {
-  max-width: 350px;
-  margin-top: 50px;
-  margin-left: 40px;
-}
-
-.card img {
-  height: 450px;
-}
-
-.carousel {
-  max-width: 60%;
+.btn {
+  width: 100%;
+  text-align: center;
 }
