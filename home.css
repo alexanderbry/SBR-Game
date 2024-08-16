@@ -3,20 +3,22 @@
   font-family: "Pixelify Sans", roboto;
 }
 
-#grid {
-  height: 575px;
-  margin: 30px 30px 25px 30px;
+header {
+  background-color: FFEDF5ff;
 }
 
-#carousel {
-  text-align: center;
+#grid {
+  height: 575px;
+  width: 100%;
+  justify-content: center;
+  margin: 30px 30px 25px 30px;
 }
 
 .btn {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .input {
