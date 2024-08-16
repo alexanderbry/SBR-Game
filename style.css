@@ -6,8 +6,9 @@
 body {
 height: 50vw;
 align-content: center;
+justify-content: center;
 
-background-image: url('bg.png');
+background-image: url('bgMain.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
