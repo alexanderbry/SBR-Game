@@ -1,142 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="home.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>SBR | Home</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <header class="bg-red-500">
-      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div class="flex h-14 items-center justify-center">
-          <div class="hidden md:block">
-            <nav aria-label="Global">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-yellow-500 transition hover:text-red-500/75"
-                    href="index.html"
-                  >
-                    Sekolah Bintang Rakyat
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.js"></script>
+
+  <title>SBR | Home</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="bg-red-500">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-14 items-center justify-center">
+        <div class="hidden md:block">
+          <nav aria-label="Global">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a
+                  class="text-yellow-500 transition hover:text-red-500/75"
+                  href="index.html"
+                >
+                  Sekolah Bintang Rakyat
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- GRID -->
-    <div id="grid" class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-      <!-- CARD -->
-      <div id="card" class="h-900 rounded-lg bg-gray-0">
+  <!-- GRID -->
+  <div id="grid" class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+    <!-- CARD -->
+    <div class="h-900 rounded-lg bg-gray-0">
+      <div
+        class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96"
+      >
         <div
-          class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96"
+          class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96"
         >
-          <div
-            class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96"
-          >
-            <img
-              src="Bryan_RI.png"
-              alt="card-image"
-              class="object-cover w-full h-full"
-            />
-          </div>
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-2">
-              <p
-                id="card-username"
-                class="block font-Pixelify Sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
-              >
-                Input your name.
-              </p>
-            </div>
-
+          <img
+            src="Bryan_RI.png"
+            alt="card-image"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-2">
             <p
-              id="card-description"
-              class="block font-Pixelify Sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75"
+              id="card-username"
+              class="block font-Pixelify Sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
             >
-              Tell me your story.
+              Input your name.
             </p>
           </div>
-          <div class="p-6 pt-0"></div>
+          <p
+            id="card-description"
+            class="block font-Pixelify Sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75"
+          >
+            Tell me your story.
+          </p>
         </div>
       </div>
     </div>
-    <!-- FOOTER -->
-    <div class="btn">
-      <!-- INPUT -->
-      <div class="input">
-        <label
-          for="Username"
-          class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
-        >
-          <input
-            type="text"
-            id="Username"
-            class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
-            placeholder="Username"
-          />
-          <span
-            class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
-          >
-            Username
-          </span>
-        </label>
-      </div>
+  </div>
 
-      <div class="input">
-        <label
-          for="Description"
-          class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+  <!-- FOOTER -->
+  <div class="btn">
+    <!-- INPUT -->
+    <div class="input">
+      <label
+        for="Username"
+        class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+      >
+        <input
+          type="text"
+          id="Username"
+          class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+          placeholder="Username"
+        />
+        <span
+          class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
         >
-          <input
-            type="text"
-            id="Description"
-            class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
-            placeholder="Description"
-          />
-          <span
-            class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
-          >
-            Description
-          </span>
-        </label>
-      </div>
-
-      <!-- CREATE/DELETE/DONE -->
-      <div>
-        <button
-          type="button"
-          id="create-btn"
-          class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
-        >
-          CREATE
-        </button>
-        <button
-          type="button"
-          id="delete-btn"
-          class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-blue-800"
-        >
-          DELETE
-        </button>
-        <button
-          type="button"
-          id="done-btn"
-          class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          DONE
-        </button>
-      </div>
+          Username
+        </span>
+      </label>
     </div>
 
-    <!-- Sertakan file JavaScript di sini -->
-    <script src="script.js"></script>
-  </body>
+    <div class="input">
+      <label
+        for="Description"
+        class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+      >
+        <input
+          type="text"
+          id="Description"
+          class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+          placeholder="Description"
+        />
+        <span
+          class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+        >
+          Description
+        </span>
+      </label>
+    </div>
+
+    <!-- CREATE/DELETE/DONE -->
+    <div>
+      <button
+        type="button"
+        id="create-btn"
+        class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
+      >
+        CREATE
+      </button>
+      <button
+        type="button"
+        id="delete-btn"
+        class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-blue-800"
+      >
+        DELETE
+      </button>
+      <button
+        type="button"
+        id="done-btn"
+        class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        DONE
+      </button>
+    </div>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>
